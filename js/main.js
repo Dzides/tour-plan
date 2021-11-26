@@ -1,6 +1,7 @@
-const swiper = new Swiper('.swiper', {
+var swiperHotel = new Swiper('.hotel-slider', {
     loop: true,
     slidesPerView: 1,
+    effect: "coverflow",
 
     keyboard: {
         enabled: true,
@@ -8,8 +9,18 @@ const swiper = new Swiper('.swiper', {
     },
 
     navigation: {
-        nextEl: '.slider-button--next',
-        prevEl: '.slider-button--prev',
+        nextEl: '.hotel-slider__button--next',
+        prevEl: '.hotel-slider__button--prev',
+    },
+
+});
+var swiperReviews = new Swiper('.reviews-slider', {
+    loop: true,
+    slidesPerView: 1,
+
+    navigation: {
+        nextEl: '.reviews-slider__button--next',
+        prevEl: '.reviews-slider__button--prev',
     },
 
 });

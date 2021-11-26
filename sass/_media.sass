@@ -1,7 +1,7 @@
 @media (max-width: 1200px )
     .container
         max-width: 960px
-    .slider
+    .hotel-slider
         width: 590px
     .swiper
         &-slide
@@ -37,6 +37,8 @@
         &-right
             flex-direction: row
             height: 210px
+        &-slider
+            width: 100%
     .booking
         width: 340px
         padding-right: 23px
@@ -46,8 +48,6 @@
         &__per
             &-room
                 line-height: 18px
-    .slider
-        width: 100%
     .map
         iframe 
             width: 340px
@@ -90,9 +90,8 @@
             &__offer
                 order: -1
                 margin-left: 0
-    .slider
-        height: 350px
-    .hotel
+        &-slider
+            height: 350px
         &-right
             flex-direction: column
             min-height: 450px
@@ -123,21 +122,20 @@
             padding-bottom: 38px
             &__offer
                 margin-top: 2px
-    .stars
-        margin-right: 15px
-        margin-top: 5px
-    .slider
-        height: 180px
-    .hotel
+        &-slider
+            height: 180px
         &__slider
             margin-bottom: 20px
         &-right
             min-height: 402px
+    .stars
+        margin-right: 15px
+        margin-top: 5px
     .booking
         padding-right: 24px
     .map
-            iframe
-                height: 172px
+        iframe
+            height: 172px
     .newsletter
         padding: 76px 0 82px
         &-title
