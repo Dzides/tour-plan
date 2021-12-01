@@ -1190,7 +1190,7 @@ button {
 .footer__item--mb-2 {
   margin-bottom: 20px;
 }
-.footer__icon--wrapper {
+.footer__icon-wrapper {
   min-width: 40px;
 }
 .footer__text {
@@ -1254,7 +1254,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.footer__bottom--text {
+.footer__bottom-text {
   grid-column: 2/4;
   align-self: center;
   justify-self: center;
@@ -1262,7 +1262,7 @@ button {
   font-size: 12px;
   line-height: 15px;
 }
-.footer__bottom--icon {
+.footer__bottom-icon {
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: end;
@@ -1463,11 +1463,11 @@ button {
   .footer__bottom {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer__bottom--text {
+  .footer__bottom-text {
     grid-column: 1;
     justify-self: start;
   }
-  .footer__bottom--icon {
+  .footer__bottom-icon {
     -ms-flex-item-align: center;
         align-self: center;
     justify-self: end;
@@ -1827,7 +1827,7 @@ button {
     grid-row: 7;
     grid-column: 1;
   }
-  .footer__icon--wrapper {
+  .footer__icon-wrapper {
     min-width: 30px;
   }
   .footer__inner {
@@ -1852,10 +1852,10 @@ button {
   .footer__bottom {
     grid-template-columns: repeat(1, 1fr);
   }
-  .footer__bottom--text {
+  .footer__bottom-text {
     margin-bottom: 10px;
   }
-  .footer__bottom--icon {
+  .footer__bottom-icon {
     justify-self: start;
   }
 }/*# sourceMappingURL=style.css.map */
