@@ -1105,6 +1105,7 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  padding-bottom: 100px;
 }
 .footer__logo {
   width: 166px;
@@ -1237,6 +1238,35 @@ button {
   line-height: 15px;
   color: #E0E0E0;
 }
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer__bottom--text {
+  grid-column: 2/4;
+  align-self: center;
+  justify-self: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer__bottom--icon {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: end;
+}
 
 @media (max-width: 1200px) {
   .container {
@@ -1357,6 +1387,7 @@ button {
 
   .activities {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1374,17 +1405,30 @@ button {
     max-width: 180px;
   }
 
+  .footer {
+    padding-top: 70px;
+  }
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
+    padding-bottom: 55px;
   }
   .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
   }
   .footer__logo {
+    width: 100px;
     grid-row: 1/2;
     grid-column: span 2;
+  }
+  .footer__title {
+    margin-top: 6px;
+    max-width: 250px;
+  }
+  .footer__title--inline {
+    margin-left: -52px;
+    margin-top: 24px;
   }
   .footer__social-network {
     grid-row: 1/2;
@@ -1400,6 +1444,12 @@ button {
   }
   .footer__additional {
     grid-column: span 2;
+    width: 250px;
+    margin-left: -39px;
+  }
+  .footer__legal {
+    grid-column: span 2;
+    padding-left: 19px;
   }
   .footer__contact-details {
     grid-column: span 5;
@@ -1408,6 +1458,19 @@ button {
   .footer__contact-form {
     grid-column: span 5;
     grid-row: 4;
+    padding-right: 40px;
+  }
+  .footer__bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__bottom--text {
+    grid-column: 1;
+    justify-self: start;
+  }
+  .footer__bottom--icon {
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: end;
   }
 }
 @media (max-width: 767px) {
@@ -1700,6 +1763,7 @@ button {
 
   .activities {
     padding-top: 5px;
+    padding-bottom: 33px;
   }
   .activities__title {
     margin-bottom: 38px;
@@ -1714,18 +1778,37 @@ button {
 
   .footer-wrapper {
     grid-template-columns: 1fr;
+    padding-bottom: 27px;
   }
   .footer__logo {
     grid-row: 1;
     grid-column: 1;
   }
+  .footer__title {
+    margin-top: -9px;
+  }
+  .footer__title--mb-5 {
+    margin-bottom: 20px;
+  }
+  .footer__title--inline {
+    margin-left: 0;
+    margin-top: 0;
+  }
   .footer__social-network {
     grid-row: 2;
     grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__additional {
     grid-row: 3;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__categories {
     grid-row: 4;
@@ -1743,5 +1826,36 @@ button {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+  }
+  .footer__icon--wrapper {
+    min-width: 30px;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 15px;
+  }
+  .footer__message {
+    margin-bottom: 15px;
+    max-width: 281px;
+  }
+  .footer__bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__bottom--text {
+    margin-bottom: 10px;
+  }
+  .footer__bottom--icon {
+    justify-self: start;
   }
 }/*# sourceMappingURL=style.css.map */
