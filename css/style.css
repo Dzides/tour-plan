@@ -1479,6 +1479,9 @@ button {
   body {
     padding-top: 78px;
   }
+  body.lock {
+    overflow: hidden;
+  }
 
   .container {
     max-width: 576px;
@@ -1516,6 +1519,7 @@ button {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
