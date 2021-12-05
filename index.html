@@ -228,8 +228,8 @@
                         Newsletter
                     </span>
                 </h2>
-                <form action="#" class="subscribe newsletter__subscribe">
-                    <input type="text" class="subscribe__input" placeholder="Your email address">
+                <form class="subscribe newsletter__subscribe" action="agreement.php" method="post">
+                    <input class="subscribe__input" type="text" name="email" placeholder="Your email address">
                     <button class="subscribe__button">
                         Send
                     </button>
@@ -537,10 +537,10 @@
 
                     <h3 class="footer__title footer__title--mb-3 footer__title--mb-5">Send us a message</h3>
 
-                    <form action="#" class="footer__form">
-                        <input type="text" class="footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form class="footer__form" action="send.php" method="post">
+                        <input class="footer__input" type="text" name="name" placeholder="Your Full Name*">
+                        <input class="footer__input" type="text" name="phone" placeholder="Phone Number*">
+                        <textarea class="footer__message" name="message" placeholder="Message"></textarea>
                         <div class="footer__inner">
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
