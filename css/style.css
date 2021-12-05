@@ -1673,6 +1673,20 @@ button {
     -ms-grid-column-align: end;
         justify-self: end;
   }
+  .modal__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .modal__dialog {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1854,6 +1868,10 @@ button {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    padding: 30px 25px;
+    width: 90%;
   }
 }
 
@@ -2063,6 +2081,12 @@ button {
   .footer__bottom-icon {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .modal__input {
+    font-size: 12px;
+  }
+  .modal__message {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
