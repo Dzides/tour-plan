@@ -10,9 +10,7 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -111,310 +109,304 @@
 
     </header>
 
-    <nav class="breadcrumb">
-        <div class="container">
-            <ul class="breadcrumb-list">
-                <li class="breadcrumb-list__item">
-                    <a href="#" class="breadcrumb-list__link">Home</a>
-                </li>
-                <li class="breadcrumb-list__item">
-                    <a href="#" class="breadcrumb-list__link">Flash Offers</a>
-                </li>
-                <li class="breadcrumb-list__item">
-                    <span class="breadcrumb-list__text">Grand Hilton Hotel</span>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <main class="main">
 
-    <section class="hotel">
-        <div class="container">
-            <div class="hotel-info">
-                <div class="hotel-info__text">
-                    <div class="hotel-wrapper">
-                        <div class="stars">
-                            <svg class="star">
-                                <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                            <svg class="star">
-                                <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                            <svg class="star">
-                                <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                            <svg class="star">
-                                <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                            <svg class="star">
-                                <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
+        <nav class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-list__item">
+                        <a href="#" class="breadcrumb-list__link">Home</a>
+                    </li>
+                    <li class="breadcrumb-list__item">
+                        <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+                    </li>
+                    <li class="breadcrumb-list__item">
+                        <span class="breadcrumb-list__text">Grand Hilton Hotel</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hotel">
+            <div class="container">
+                <div class="hotel-info">
+                    <div class="hotel-info__text">
+                        <div class="hotel-wrapper">
+                            <div class="stars">
+                                <svg class="star">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="star">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="star">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="star">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="star">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                            </div>
+                            <h1 class="hotel-name hotel-info__name">Grand hilton hotel</h1>
+                            <span class="offer hotel-info__offer">Flash Offer</span>
                         </div>
-                        <h1 class="hotel-name hotel-info__name">Grand hilton hotel</h1>
-                        <span class="offer hotel-info__offer">Flash Offer</span>
+                        <p class="hotel-description hotel-info__description">
+                            Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+                        </p>
                     </div>
-                    <p class="hotel-description hotel-info__description">
-                        Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
-                    </p>
+                    <div class="rating hotel-info__rating">
+                        <span class="rating__text">User Rattings</span>
+                        <span class="rating__counter">4.5/
+                            <span class="rating__counter rating__counter--all">5</span>
+                        </span>
+                    </div>
                 </div>
-                <div class="rating hotel-info__rating">
-                    <span class="rating__text">User Rattings</span>
-                    <span class="rating__counter">4.5/
-                        <span class="rating__counter rating__counter--all">5</span>
-                    </span>
+                <div class="hotel-grid">
+                    <div class="swiper hotel-slider hotel__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-1.jpg" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-2.jpg" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-3.jpg" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-4.jpg" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-5.jpg" alt="Slide"></div>
+                        </div>
+                        <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                        <button class="hotel-slider__button hotel-slider__button--next"></button>
+                    </div>
+                    <div class="hotel-right">
+                        <div class="booking">
+                            <div class="booking__info">
+                                <div class="booking__price">
+                                    <span class="booking__start">price starts as</span>
+                                    <strong class="booking__pricetag">$ 8,500</strong>
+                                    <span class="booking__per-room">per room / night</span>
+                                </div>
+                                <div class="booking__room">
+                                    <div class="booking__text">
+                                        <img src="img/user.svg" alt="Icon: user" class="booking__icon">
+                                        <span class="booking__description">2 x Guests</span>
+                                    </div>
+                                    <div class="booking__text">
+                                        <img src="img/home.svg" alt="Icon: home" class="booking__icon">
+                                        <span class="booking__description">1 x Room</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking__call-center">
+                                <span class="booking__heading">Quick Booking</span>
+                                <a href="tel:12100" class="booking__number">
+                                    <img src="img/phone-call.svg" alt="Icon: phone">
+                                    <span class="booking__num">12100</span>
+                                </a>
+                            </div>
+                            <button data-toggle="modal" class="button booking__button">View Other Options</button>
+                        </div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004632620615!2d79.80141631378778!3d7.574472312156741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1637857428261!5m2!1sru!2sru"
+                                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hotel-grid">
-                <div class="swiper hotel-slider hotel__slider">
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-wrapper">
+                    <h2 class="newsletter-title">
+                        subscribe to our
+                        <span class="newsletter-title__strong">
+                            Newsletter
+                        </span>
+                    </h2>
+                    <form class="subscribe newsletter__subscribe" action="agreement.php" method="post">
+                        <input class="subscribe__input" type="text" name="email" placeholder="Your email address" required>
+                        <button class="subscribe__button">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">What people think about us</h2>
+                <div class="swiper reviews-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image"
-                                src="img/slide-1.jpg" alt="Slide"></div>
-                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image"
-                                src="img/slide-2.jpg" alt="Slide"></div>
-                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image"
-                                src="img/slide-3.jpg" alt="Slide"></div>
-                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image"
-                                src="img/slide-4.jpg" alt="Slide"></div>
-                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image"
-                                src="img/slide-5.jpg" alt="Slide"></div>
-                    </div>
-                    <button class="hotel-slider__button hotel-slider__button--prev"></button>
-                    <button class="hotel-slider__button hotel-slider__button--next"></button>
-                </div>
-                <div class="hotel-right">
-                    <div class="booking">
-                        <div class="booking__info">
-                            <div class="booking__price">
-                                <span class="booking__start">price starts as</span>
-                                <strong class="booking__pricetag">$ 8,500</strong>
-                                <span class="booking__per-room">per room / night</span>
-                            </div>
-                            <div class="booking__room">
-                                <div class="booking__text">
-                                    <img src="img/user.svg" alt="Icon: user" class="booking__icon">
-                                    <span class="booking__description">2 x Guests</span>
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__item">
+                                <div class="reviews-slider__profile">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox">
+                                    <h3 class="reviews-slider__username">Megan Fox</h3>
+                                    <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                    <div class="reviews-slider__rating">
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="booking__text">
-                                    <img src="img/home.svg" alt="Icon: home" class="booking__icon">
-                                    <span class="booking__description">1 x Room</span>
-                                </div>
+                                <p class="reviews-slider__text">
+                                    It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+                                    welcome us very well. Issue was only that Lift was not in working and we were allotted
+                                    to 3rd floor and amenities articles were in corner of gallery which were giving bad
+                                    feeling. Breakfast was good and support of the staff was also very nice. Location is not
+                                    good as per atmosphere, it is very nearby most of the popular places but self location
+                                    in a narrow street is not good. Overall it was a good experience and could recommend.
+                                </p>
                             </div>
                         </div>
-                        <div class="booking__call-center">
-                            <span class="booking__heading">Quick Booking</span>
-                            <a href="tel:12100" class="booking__number">
-                                <img src="img/phone-call.svg" alt="Icon: phone">
-                                <span class="booking__num">12100</span>
-                            </a>
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__item">
+                                <div class="reviews-slider__profile">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg" alt="Photo: Megan Fox">
+                                    <h3 class="reviews-slider__username">Merlin Monro</h3>
+                                    <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                    <div class="reviews-slider__rating">
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, doloremque rerum
+                                    explicabo voluptatum non nam?
+                                </p>
+                            </div>
                         </div>
-                        <button class="button booking__button">View Other Options</button>
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__item">
+                                <div class="reviews-slider__profile">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg" alt="Photo: Megan Fox">
+                                    <h3 class="reviews-slider__username">Djo Dassen</h3>
+                                    <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                    <div class="reviews-slider__rating">
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis amet dicta eius
+                                    autem recusandae, esse, id pariatur nobis laudantium, reiciendis ab illo excepturi
+                                    nihil?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__item">
+                                <div class="reviews-slider__profile">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-4.jpg" alt="Photo: Megan Fox">
+                                    <h3 class="reviews-slider__username">Richi More</h3>
+                                    <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                    <div class="reviews-slider__rating">
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facere consequuntur
+                                    voluptatem ea quaerat corrupti impedit deserunt obcaecati sequi ratione.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004632620615!2d79.80141631378778!3d7.574472312156741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1637857428261!5m2!1sru!2sru"
-                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
+                    <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                    <button class="reviews-slider__button reviews-slider__button--next"></button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-wrapper">
-                <h2 class="newsletter-title">
-                    subscribe to our
-                    <span class="newsletter-title__strong">
-                        Newsletter
-                    </span>
-                </h2>
-                <form class="subscribe newsletter__subscribe" action="agreement.php" method="post">
-                    <input class="subscribe__input" type="text" name="email" placeholder="Your email address">
-                    <button class="subscribe__button">
-                        Send
-                    </button>
-                </form>
+        <section class="activities">
+            <div class="container">
+                <h2 class="activities__title">Other Activities</h2>
+                <div class="activities-wrapper">
+                    <div class="card activities__card">
+                        <img src="img/card-activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
+                        <h3 class="card__title">
+                            The curious corner of chamarel
+                        </h3>
+                        <button class="card__button">Book Now</button>
+                    </div>
+                    <div class="card activities__card">
+                        <img src="img/card-activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
+                        <h3 class="card__title">
+                            Gymkhana club golf course
+                        </h3>
+                        <button class="card__button">Book Now</button>
+                    </div>
+                    <div class="card activities__card">
+                        <img src="img/card-activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+                        <h3 class="card__title">
+                            Tamarind falls hiking trip - full day
+                        </h3>
+                        <button class="card__button">Book Now</button>
+                    </div>
+                    <div class="card activities__card">
+                        <img src="img/card-activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
+                        <h3 class="card__title">
+                            The blue marine discovery quest
+                        </h3>
+                        <button class="card__button">Book Now</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="reviews">
-        <div class="container">
-            <h2 class="reviews__title">What people think about us</h2>
-            <div class="swiper reviews-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="reviews-slider__item">
-                            <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-1.jpg"
-                                    alt="Photo: Megan Fox">
-                                <h3 class="reviews-slider__username">Megan Fox</h3>
-                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                                <div class="reviews-slider__rating">
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="reviews-slider__text">
-                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They
-                                welcome us very well. Issue was only that Lift was not in working and we were allotted
-                                to 3rd floor and amenities articles were in corner of gallery which were giving bad
-                                feeling. Breakfast was good and support of the staff was also very nice. Location is not
-                                good as per atmosphere, it is very nearby most of the popular places but self location
-                                in a narrow street is not good. Overall it was a good experience and could recommend.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="reviews-slider__item">
-                            <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg"
-                                    alt="Photo: Megan Fox">
-                                <h3 class="reviews-slider__username">Merlin Monro</h3>
-                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                                <div class="reviews-slider__rating">
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="reviews-slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, doloremque rerum
-                                explicabo voluptatum non nam?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="reviews-slider__item">
-                            <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg"
-                                    alt="Photo: Megan Fox">
-                                <h3 class="reviews-slider__username">Djo Dassen</h3>
-                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                                <div class="reviews-slider__rating">
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="reviews-slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis amet dicta eius
-                                autem recusandae, esse, id pariatur nobis laudantium, reiciendis ab illo excepturi
-                                nihil?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="reviews-slider__item">
-                            <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-4.jpg"
-                                    alt="Photo: Megan Fox">
-                                <h3 class="reviews-slider__username">Richi More</h3>
-                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                                <div class="reviews-slider__rating">
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                    <svg class="star">
-                                        <use xlink:href="img/sprite.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="reviews-slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facere consequuntur
-                                voluptatem ea quaerat corrupti impedit deserunt obcaecati sequi ratione.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <button class="reviews-slider__button reviews-slider__button--prev"></button>
-                <button class="reviews-slider__button reviews-slider__button--next"></button>
-            </div>
-        </div>
-    </section>
-
-    <section class="activities">
-        <div class="container">
-            <h2 class="activities__title">Other Activities</h2>
-            <div class="activities-wrapper">
-                <div class="card activities__card">
-                    <img src="img/card-activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
-                    <h3 class="card__title">
-                        The curious corner of chamarel
-                    </h3>
-                    <button class="card__button">Book Now</button>
-                </div>
-                <div class="card activities__card">
-                    <img src="img/card-activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
-                    <h3 class="card__title">
-                        Gymkhana club golf course
-                    </h3>
-                    <button class="card__button">Book Now</button>
-                </div>
-                <div class="card activities__card">
-                    <img src="img/card-activities-3.jpg" alt="Tamarind falls hiking trip - full day"
-                        class="card__image">
-                    <h3 class="card__title">
-                        Tamarind falls hiking trip - full day
-                    </h3>
-                    <button class="card__button">Book Now</button>
-                </div>
-                <div class="card activities__card">
-                    <img src="img/card-activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
-                    <h3 class="card__title">
-                        The blue marine discovery quest
-                    </h3>
-                    <button class="card__button">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -521,8 +513,8 @@
                                 <img class="footer__icon" src="img/footer-phone-call.svg" alt="Icon: phone call">
                             </div>
                             <span>Tel (business hours) : <a href="tel:269 1500">269 1500</a><br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
+                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
+                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
@@ -537,11 +529,11 @@
 
                     <h3 class="footer__title footer__title--mb-3 footer__title--mb-5">Send us a message</h3>
 
-                    <form class="footer__form" action="send.php" method="post">
-                        <input class="footer__input" type="text" name="name" placeholder="Your Full Name*">
-                        <input class="footer__input" type="text" name="phone" placeholder="Phone Number*">
-                        <textarea class="footer__message" name="message" placeholder="Message"></textarea>
-                        <div class="footer__inner">
+                    <form class="form footer__form" action="send.php" method="post">
+                        <input class="input footer__input" type="text" name="name" placeholder="Your Full Name*" required>
+                        <input class="input footer__input" type="text" name="phone" placeholder="Phone Number*" required>
+                        <textarea class="message footer__message" name="message" placeholder="Message"></textarea>
+                        <div class="inner footer__inner">
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </div>
@@ -561,6 +553,30 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3 modal__title--mb-5">Booking</h3>
+
+            <form class="form modal__form" action="send.php" method="post">
+                <input class="input modal__input" type="text" name="name" placeholder="Your Full Name*" required>
+                <input class="input modal__input" type="text" name="phone" placeholder="Phone Number*" required>
+                <input class="input modal__input" type="text" name="email" placeholder="Email*" required>
+                <textarea class="message modal__message" name="message" placeholder="Message"></textarea>
+                <div class="inner modal__inner">
+                    <button class="button modal__button" type="submit">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
