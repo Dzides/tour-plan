@@ -1429,6 +1429,8 @@ button {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  height: 100%;
+  overflow: auto;
 }
 
 .modal__close {
