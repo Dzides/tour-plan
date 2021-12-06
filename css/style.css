@@ -1429,8 +1429,6 @@ button {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-  height: 100%;
-  overflow: auto;
 }
 
 .modal__close {
@@ -2089,6 +2087,10 @@ button {
   }
   .modal__message {
     font-size: 12px;
+  }
+  .modal__dialog--visible {
+    height: 100%;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
