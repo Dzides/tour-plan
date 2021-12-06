@@ -958,7 +958,6 @@ button {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -972,6 +971,7 @@ button {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  line-height-overflow: hidden;
 }
 
 .subscribe__button {
