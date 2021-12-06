@@ -1873,6 +1873,10 @@ button {
     padding: 30px 25px;
     width: 90%;
   }
+  .modal__dialog--visible {
+    height: 95%;
+    overflow: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2087,10 +2091,6 @@ button {
   }
   .modal__message {
     font-size: 12px;
-  }
-  .modal__dialog--visible {
-    height: 100%;
-    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
