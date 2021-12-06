@@ -535,7 +535,7 @@
                         </div>
 
                         <div class="footer__input-group">
-                            <input id="phone" class="input footer__input phone" type="phone" name="phone" placeholder="Phone Number*" required>
+                            <input id="phone" class="input footer__input phone" type="phone" name="phone" placeholder="Phone Number*" required required minlength="18">
                         </div>
 
                         <textarea class="message footer__message" name="message" placeholder="Message"></textarea>
@@ -572,7 +572,7 @@
 
                 <form class="form modal__form control" action="send.php" method="post">
                     <input class="input modal__input" type="text" name="name" placeholder="Your Full Name*" required minlength="2">
-                    <input id="phone" class="input modal__input phone" type="tel" name="phone" placeholder="Phone Number*" required>
+                    <input id="phone" class="input modal__input phone" type="tel" name="phone" placeholder="Phone Number*" required minlength="18">
                     <input class="input modal__input" type="email" name="email" placeholder="Email*" required>
                     <textarea class="message modal__message" name="message" placeholder="Message"></textarea>
                     <div class="inner modal__inner">
