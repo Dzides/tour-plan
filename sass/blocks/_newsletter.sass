@@ -38,18 +38,28 @@
     width: 350px
     height: 55px
     border-radius: 4px
+    &:focus
+            border: 1px solid $primary
     &__input
         position: relative
         width: 100%
         height: 100%
-        border: none
+        border: 1px solid transparent
+        border-radius: 4px
         padding-left: 33px
-        padding-right: 75px
+        padding-right: 75p
         font-style: normal
         font-weight: 300
         font-size: 14px
         line-height: 18px
-         overflow: hidden
+        overflow: hidden
+        &:hover
+            box-shadow: 0 0 3px 2px rgba($primary, 0.5)
+            color: rgba($text-color, 0.5)
+        &:focus
+            border: 1px solid $primary
+        &:active
+            border: 1px solid $primary
     &__button
         position: absolute
         min-width: 65px
@@ -65,6 +75,15 @@
         line-height: 15px
         background-color: $primary
         color: $light
+        border-radius: 0 4px 4px 0
         overflow: hidden
         text-overflow: ellipsis
+        &:hover
+            border: 1px solid $primary
+            color: $primary
+            background-color: $secondary
+        &:focus
+            border: 1px solid $secondary
+        &:active
+            border: 1px solid $primary
 

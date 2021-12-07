@@ -22,12 +22,24 @@
             text-transform: uppercase
             font-size: 14px
             line-height: 18px
+            &:hover 
+                color: $primary
+            &:focus
+                border: 1px solid $primary
+            &:active
+                color: $primary
         &__item
             &--mobile
                 &--visible
                     display: none
 .logo 
     width: 177px
+    &:hover
+        @extend %hover-bxsh
+    &:focus
+        border: 1px solid $primary
+    &:active
+        border: 1px solid $primary
 .search
     display: flex
     position: relative
@@ -44,6 +56,15 @@
         font-size: 12px
         line-height: 15px
         color: $text-color
+        &:hover
+            color: rgba($text-color, 0.5)
+    &:hover
+        box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+        color: rgba($text-color, 0.5)
+    &:focus
+        border: 1px solid $primary
+    &:active
+        border: 1px solid $primary
     &__button
         position: absolute
         top: 0
@@ -52,11 +73,18 @@
         height: 100%
         border: none
         background-color: $primary
+        border: 1px solid $primary
         cursor: pointer
+        &:hover
+          opacity: 0.8
+        &:focus
+            border: 1px solid $secondary
+        &:active
+            border: 1px solid $secondary
     &__icon
         width: 16px
         height: 16px
-        fill: $light 
+        fill: $light
 .user
     display: flex
     align-items: center
@@ -66,9 +94,21 @@
         height: 40px
         border-radius: 50%
         object-fit: cover
+        &:hover
+            @extend %hover-bxsh
+        &:focus
+            border: 1px solid $primary
+        &:active
+            border: 1px solid $primary
     &__name
         margin-left: 18px
         font-size: 14px
         line-height: 18px
         color: $text-color
+        &:hover
+            color: $primary
+        &:focus
+            border: 1px solid $primary
+        &:active
+            border: 1px solid $primary    
 
