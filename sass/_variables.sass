@@ -7,13 +7,14 @@ $star: #F2994A
 $footer-text-color : #BDBDBD
 $footer-info: #E0E0E0
 
-%hover-bxsh 
-    box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+// %hover-bxsh 
+//     box-shadow: 0 0 3px 1px rgba($primary, 0.5)
 
-// @extend %hover-bxsh
-// &:hover
-//         @extend %hover-bxsh
-//     &:focus
-//         border: 1px solid $primary
-//     &:active
-//         border: 1px solid $primary
+@mixin desktop 
+    @media (min-width: (992px)) 
+        @content;
+    
+
+// @include desktop
+//             &:hover
+//                 border-color: $bg

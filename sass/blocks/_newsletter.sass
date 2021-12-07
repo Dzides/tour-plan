@@ -53,9 +53,10 @@
         font-size: 14px
         line-height: 18px
         overflow: hidden
-        &:hover
-            box-shadow: 0 0 3px 2px rgba($primary, 0.5)
-            color: rgba($text-color, 0.5)
+        @include desktop
+            &:hover
+                box-shadow: 0 0 3px 2px rgba($primary, 0.5)
+                color: rgba($text-color, 0.5)
         &:focus
             border: 1px solid $primary
         &:active
@@ -78,10 +79,11 @@
         border-radius: 0 4px 4px 0
         overflow: hidden
         text-overflow: ellipsis
-        &:hover
-            border: 1px solid $primary
-            color: $primary
-            background-color: $secondary
+        @include desktop
+            &:hover
+                border: 1px solid $primary
+                color: $primary
+                background-color: $secondary
         &:focus
             border: 1px solid $secondary
         &:active

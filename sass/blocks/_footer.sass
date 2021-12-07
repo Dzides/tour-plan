@@ -27,24 +27,26 @@
             grid-row: 2 / 4
             grid-column: 3 / 5
     &__link
-        &:hover
-            fill: $primary
+        @include desktop
+            &:hover
+                fill: $primary
         &:focus
             box-shadow: 0 0 3px 1px rgba($primary, 0.5)
-        &:hover
+        &:active
             fill: $primary
         &-social
             svg
                 width: 20px
                 height: 20px
                 fill: $footer-text-color
-            &:hover
-                svg
-                    fill: $primary
+            @include desktop
+                &:hover
+                    svg
+                        fill: $primary
             &:focus
                 svg
                     box-shadow: 0 0 3px 1px rgba($primary, 0.5)
-            &:hover
+            &:active
                 svg
                     fill: $primary
     &__legal
@@ -86,9 +88,10 @@
         margin-bottom: 22px
     &__input
         width: 100%
-        &:hover
-            box-shadow: 0 0 3px 3px rgba($primary, 0.5)
-            color: rgba($text-color, 0.5)
+        @include desktop
+            &:hover
+                box-shadow: 0 0 3px 3px rgba($primary, 0.5)
+                color: rgba($text-color, 0.5)
         &:focus
             box-shadow: 0 0 3px 3px rgba($primary, 0.5)
         &:active
@@ -100,9 +103,10 @@
         flex-basis: 100%
         margin-bottom: 23px
         resize: none
-        &:hover
-            box-shadow: 0 0 3px 3px rgba($primary, 0.5)
-            color: rgba($text-color, 0.5)
+        @include desktop
+            &:hover
+                box-shadow: 0 0 3px 3px rgba($primary, 0.5)
+                color: rgba($text-color, 0.5)
         &:focus
             box-shadow: 0 0 3px 3px rgba($primary, 0.5)
         &:active

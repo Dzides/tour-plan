@@ -58,10 +58,11 @@
         background-color: $primary
         border: 1px solid transparent
         border-radius: 4px
-        &:hover
-            border: 1px solid $primary
-            color: $primary
-            background-color: $secondary
+        @include desktop
+            &:hover
+                border: 1px solid $primary
+                color: $primary
+                background-color: $secondary
         &:focus
             border: 1px solid $secondary
         &:active
