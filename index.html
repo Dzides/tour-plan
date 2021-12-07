@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +22,7 @@
 
             <div class="navbar-top">
 
-                <a href="#" class="logo">
+                <a href="#" class="logo" data-aos="flip-up">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
 
@@ -376,28 +377,28 @@
             <div class="container">
                 <h2 class="activities__title">Other Activities</h2>
                 <div class="activities-wrapper">
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
                         <img src="img/card-activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
                         <h3 class="card__title">
                             The curious corner of chamarel
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="flip-right" data-aos-delay="300">
                         <img src="img/card-activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
                         <h3 class="card__title">
                             Gymkhana club golf course
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="flip-left" data-aos-delay="300">
                         <img src="img/card-activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                         <h3 class="card__title">
                             Tamarind falls hiking trip - full day
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="fade-left" data-aos-delay="100">
                         <img src="img/card-activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
                         <h3 class="card__title">
                             The blue marine discovery quest
@@ -415,7 +416,7 @@
 
             <div class="footer-wrapper">
 
-                <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best tour plan">
+                <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best tour plan" data-aos="flip-up">
 
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">All categories</h3>
@@ -526,9 +527,9 @@
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/footer-phone-call.svg" alt="Icon: phone call">
                             </div>
-                            <span>Tel (business hours) : <a href="tel:269 1500">269 1500</a><br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
+                            <span>Tel (business hours) : <a href="tel:2691500">269 1500</a><br>
+                                Tel (hotline) Monday - Saturday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                                Tel (hotline) Sunday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)</span>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
@@ -605,6 +606,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>
