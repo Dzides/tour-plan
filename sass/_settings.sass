@@ -1,7 +1,8 @@
 *
     box-sizing: border-box
 body
-    font-family: 'Mulish', sans-serif
+    font-family: 'Mulish-Regular', sans-serif
+    font-weight: 400
     background-color: $secondary
     color: $text-color
 h1, h2, h3, h4, h5, h6 
@@ -15,11 +16,12 @@ ul, li
 a
     text-decoration: none
     color: inherit
+    transition: all 0.3s
     @include desktop
         &:hover 
             color: $primary
-    &:focus
-        box-shadow: 0 0 3px 3px rgba($primary, 0.5)
+    // &:focus
+    //     box-shadow: 0 0 3px 3px rgba($primary, 0.5)
     &:active
         color: $primary
 
@@ -58,21 +60,22 @@ button
     min-width: 160px
     min-height: 50px
     padding: 18px
-    font-style: normal
-    font-weight: bold
+    font-family: 'Mulish-Bold', sans-serif
+    font-weight: 700
     font-size: 12px
     line-height: 15px
     color: $light
     background-color: $primary
     border: 1px solid transparent
     border-radius: 4px
+    transition: all 0.3s
     @include desktop
         &:hover
             color: $primary
             background-color: $secondary
             border: 1px solid $primary
-    &:focus
-        border: 1px solid $secondary
+    // &:focus
+    //     border: 1px solid $secondary
     &:active
         border: 1px solid $secondary
 .invalid

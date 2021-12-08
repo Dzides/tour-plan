@@ -1,6 +1,7 @@
 .activities
     padding: 60px 0 98px
     &__title
+        font-family: 'Mulish-Bold', sans-serif
         font-style: normal
         font-weight: 700
         font-size: 24px
@@ -43,14 +44,15 @@
         margin-top: auto
         margin-bottom: 18px
         color: $light
+        font-family: 'Mulish-Bold', sans-serif
         font-style: normal
         font-weight: 700
         font-size: 16px
         line-height: 20px
     &__button
-        font-family: 'Nunito', sans-serif
-        font-style: normal
+        font-family: 'Nunito-SemiBold', sans-serif
         font-weight: 600
+        font-style: normal
         font-size: 12px
         line-height: 16px
         color: $light
@@ -58,12 +60,13 @@
         background-color: $primary
         border: 1px solid transparent
         border-radius: 4px
+        transition: all 0.3s
         @include desktop
             &:hover
                 border: 1px solid $primary
                 color: $primary
                 background-color: $secondary
-        &:focus
-            border: 1px solid $secondary
+        // &:focus
+        //     border: 1px solid $secondary
         &:active
             border: 1px solid $secondary

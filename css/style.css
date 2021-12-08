@@ -341,13 +341,70 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Mulish-Light';
+  src: url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-Regular';
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-SemiBold';
+  src: url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-ExtraBold';
+  src: url("../fonts/Nunito-ExtraBold.woff2") format("woff2"), url("../fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish-Regular', sans-serif;
+  font-weight: 400;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -369,17 +426,14 @@ ul, li {
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   a:hover {
     color: #EC1F46;
   }
-}
-
-a:focus {
-  -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
-          box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
 }
 
 a:active {
@@ -448,14 +502,16 @@ button {
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Mulish-Bold', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #FFF;
   background-color: #EC1F46;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -464,10 +520,6 @@ button {
     background-color: #F5FAFE;
     border: 1px solid #EC1F46;
   }
-}
-
-.button:focus {
-  border: 1px solid #F5FAFE;
 }
 
 .button:active {
@@ -528,18 +580,19 @@ button {
 .navbar-menu__link {
   color: #FFF;
   text-transform: uppercase;
+  font-family: 'Mulish-Bold';
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
-  .navbar-menu:hover {
+  .navbar-menu__link:hover {
     color: #EC1F46;
   }
-  .navbar-menu:focus {
-    border: 1px solid #EC1F46;
-  }
-  .navbar-menu:active {
+  .navbar-menu__link:active {
     color: #EC1F46;
   }
 }
@@ -552,21 +605,6 @@ button {
   width: 177px;
 }
 
-@media (min-width: 992px) {
-  .logo:hover {
-    -webkit-box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
-            box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
-  }
-}
-
-.logo:focus {
-  border: 1px solid #EC1F46;
-}
-
-.logo:active {
-  border: 1px solid #EC1F46;
-}
-
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,6 +613,8 @@ button {
   height: 40px;
   overflow: hidden;
   border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .search__input {
@@ -587,6 +627,8 @@ button {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -597,8 +639,6 @@ button {
 
 @media (min-width: 992px) {
   .search:hover {
-    -webkit-box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
-            box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
     color: rgba(51, 51, 51, 0.5);
   }
 }
@@ -621,16 +661,14 @@ button {
   background-color: #EC1F46;
   border: 1px solid #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .search__button:hover {
     opacity: 0.8;
   }
-}
-
-.search__button:focus {
-  border: 1px solid #F5FAFE;
 }
 
 .search__button:active {
@@ -659,6 +697,8 @@ button {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -666,10 +706,6 @@ button {
     -webkit-box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
             box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
   }
-}
-
-.user__avatar:focus {
-  border: 1px solid #EC1F46;
 }
 
 .user__avatar:active {
@@ -681,16 +717,14 @@ button {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .user__name:hover {
     color: #EC1F46;
   }
-}
-
-.user__name:focus {
-  border: 1px solid #EC1F46;
 }
 
 .user__name:active {
@@ -914,7 +948,8 @@ button {
   width: 350px;
   min-height: 210px;
   padding: 29px 29px 26px 26px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito-Regular', sans-serif;
+  font-weight: 400;
 }
 
 .booking__info {
@@ -938,21 +973,18 @@ button {
 }
 
 .booking__start {
-  font-weight: 400;
   font-size: 10px;
   line-height: 14px;
 }
 
 .booking__pricetag {
-  font-style: normal;
+  font-family: 'Nunito-ExtraBold', sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
 }
 
 .booking__per-room {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 8px;
 }
@@ -972,8 +1004,6 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 8px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
@@ -996,7 +1026,7 @@ button {
 }
 
 .booking__heading {
-  font-style: normal;
+  font-family: 'Nunito-SemiBold', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -1012,6 +1042,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'Nunito-SemiBold', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -1033,6 +1064,7 @@ button {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  font-family: 'Nunito-SemiBold', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -1050,7 +1082,7 @@ button {
 .newsletter {
   position: relative;
   padding: 97px 0 88px;
-  background-image: url(../img/newsletter-bg.jpg);
+  background-image: url(../img/newsletter-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1086,7 +1118,7 @@ button {
 .newsletter-title {
   color: #FFF;
   font-size: 24px;
-  font-style: normal;
+  font-family: 'Mulish-Light', sans-serif;
   font-weight: 300;
   line-height: 30px;
 }
@@ -1117,17 +1149,17 @@ button {
   border-radius: 4px;
   padding-left: 33px;
   padding-right: 75p;
-  font-style: normal;
+  font-family: 'Mulish-Light', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .subscribe__input:hover {
-    -webkit-box-shadow: 0 0 3px 2px rgba(236, 31, 70, 0.5);
-            box-shadow: 0 0 3px 2px rgba(236, 31, 70, 0.5);
     color: rgba(51, 51, 51, 0.5);
   }
 }
@@ -1151,6 +1183,7 @@ button {
   padding-right: 5px;
   font-size: 12px;
   font-style: normal;
+  font-family: 'Mulish-Bold', sans-serif;
   font-weight: 700;
   line-height: 15px;
   background-color: #EC1F46;
@@ -1158,6 +1191,8 @@ button {
   border-radius: 0 4px 4px 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -1166,10 +1201,6 @@ button {
     color: #EC1F46;
     background-color: #F5FAFE;
   }
-}
-
-.subscribe__button:focus {
-  border: 1px solid #F5FAFE;
 }
 
 .subscribe__button:active {
@@ -1181,7 +1212,7 @@ button {
 }
 
 .reviews__title {
-  font-style: normal;
+  font-family: 'Mulish-Bold', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -1257,7 +1288,7 @@ button {
 
 .reviews-slider__username {
   font-size: 12px;
-  font-style: normal;
+  font-family: 'Mulish-Bold', sans-serif;
   font-weight: 700;
   line-height: 15px;
   color: #EC1F46;
@@ -1266,8 +1297,6 @@ button {
 
 .reviews-slider__date {
   font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 13px;
   margin-bottom: 4px;
 }
@@ -1283,8 +1312,6 @@ button {
 
 .reviews-slider__text {
   max-width: 537px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 19px;
   text-align: justify;
@@ -1322,6 +1349,7 @@ button {
 }
 
 .activities__title {
+  font-family: 'Mulish-Bold', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1386,6 +1414,7 @@ button {
   margin-top: auto;
   margin-bottom: 18px;
   color: #FFF;
+  font-family: 'Mulish-Bold', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1393,9 +1422,9 @@ button {
 }
 
 .card__button {
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
+  font-family: 'Nunito-SemiBold', sans-serif;
   font-weight: 600;
+  font-style: normal;
   font-size: 12px;
   line-height: 16px;
   color: #FFF;
@@ -1403,6 +1432,8 @@ button {
   background-color: #EC1F46;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -1411,10 +1442,6 @@ button {
     color: #EC1F46;
     background-color: #F5FAFE;
   }
-}
-
-.card__button:focus {
-  border: 1px solid #F5FAFE;
 }
 
 .card__button:active {
@@ -1486,15 +1513,15 @@ button {
   grid-column: 3 / 5;
 }
 
+.footer__link {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 @media (min-width: 992px) {
   .footer__link:hover {
     fill: #EC1F46;
   }
-}
-
-.footer__link:focus {
-  -webkit-box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
-          box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
 }
 
 .footer__link:active {
@@ -1505,17 +1532,14 @@ button {
   width: 20px;
   height: 20px;
   fill: #BDBDBD;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .footer__link-social:hover svg {
     fill: #EC1F46;
   }
-}
-
-.footer__link-social:focus svg {
-  -webkit-box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
-          box-shadow: 0 0 3px 1px rgba(236, 31, 70, 0.5);
 }
 
 .footer__link-social:active svg {
@@ -1536,8 +1560,9 @@ button {
 }
 
 .footer__title {
+  font-family: 'Mulish-Bold', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 23px;
@@ -1559,8 +1584,6 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.6;
   color: #BDBDBD;
@@ -1581,12 +1604,12 @@ button {
 
 .footer__input {
   width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .footer__input:hover {
-    -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
-            box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
     color: rgba(51, 51, 51, 0.5);
   }
 }
@@ -1612,12 +1635,12 @@ button {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 992px) {
   .footer__message:hover {
-    -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
-            box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
     color: rgba(51, 51, 51, 0.5);
   }
 }
@@ -1633,8 +1656,9 @@ button {
 }
 
 .footer__info {
+  font-family: 'Mulish-Bold';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
@@ -1656,7 +1680,6 @@ button {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
@@ -1718,6 +1741,7 @@ button {
 }
 
 .modal__title {
+  font-family: 'Mulish-Bold', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -1742,8 +1766,8 @@ button {
 }
 
 .modal__info {
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Mulish-Bold', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;

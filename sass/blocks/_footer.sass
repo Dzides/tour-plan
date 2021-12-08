@@ -27,11 +27,12 @@
             grid-row: 2 / 4
             grid-column: 3 / 5
     &__link
+        transition: all 0.3s
         @include desktop
             &:hover
                 fill: $primary
-        &:focus
-            box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+        // &:focus
+        //     box-shadow: 0 0 3px 1px rgba($primary, 0.5)
         &:active
             fill: $primary
         &-social
@@ -39,13 +40,14 @@
                 width: 20px
                 height: 20px
                 fill: $footer-text-color
+                transition: all 0.3s
             @include desktop
                 &:hover
                     svg
                         fill: $primary
-            &:focus
-                svg
-                    box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+            // &:focus
+            //     svg
+            //         box-shadow: 0 0 3px 1px rgba($primary, 0.5)
             &:active
                 svg
                     fill: $primary
@@ -58,8 +60,9 @@
             &-form
                 grid-column: span 2
     &__title
+        font-family: 'Mulish-Bold', sans-serif
         font-style: normal
-        font-weight: bold
+        font-weight: 700
         text-transform: uppercase
         font-size: 18px
         line-height: 23px
@@ -72,8 +75,6 @@
     &__item
         display: flex
         align-items: flex-start
-        font-style: normal
-        font-weight: normal
         font-size: 14px
         line-height: 1.6
         color: $footer-text-color
@@ -88,9 +89,10 @@
         margin-bottom: 22px
     &__input
         width: 100%
+        transition: all 0.3s
         @include desktop
             &:hover
-                box-shadow: 0 0 3px 3px rgba($primary, 0.5)
+                // box-shadow: 0 0 3px 3px rgba($primary, 0.5)
                 color: rgba($text-color, 0.5)
         &:focus
             box-shadow: 0 0 3px 3px rgba($primary, 0.5)
@@ -103,17 +105,19 @@
         flex-basis: 100%
         margin-bottom: 23px
         resize: none
+        transition: all 0.3s
         @include desktop
             &:hover
-                box-shadow: 0 0 3px 3px rgba($primary, 0.5)
+                // box-shadow: 0 0 3px 3px rgba($primary, 0.5)
                 color: rgba($text-color, 0.5)
         &:focus
             box-shadow: 0 0 3px 3px rgba($primary, 0.5)
         &:active
             box-shadow: 0 0 3px 3px rgba($primary, 0.5)
     &__info
+        font-family: 'Mulish-Bold'
         font-style: normal
-        font-weight: bold
+        font-weight: 700
         font-size: 12px
         line-height: 15px
         color: $footer-info
@@ -124,7 +128,6 @@
             grid-column: 2 / 4
             align-self: center
             justify-self: center
-            font-weight: 400
             font-size: 12px
             line-height: 15px
         &-icon

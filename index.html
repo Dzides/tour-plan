@@ -8,12 +8,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="font">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -23,7 +21,7 @@
             <div class="navbar-top">
 
                 <a href="#" class="logo" data-aos="flip-up" data-aos-delay="500">
-                    <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+                    <img class="logo__image" src="img/horizontal-logo.svg" width="177" height="24" alt="Logo: Best Tour Plan">
                 </a>
 
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -36,7 +34,7 @@
                 </form>
 
                 <a href="#" class="user navbar__user navbar__user--mobile--hidden">
-                    <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+                    <img class="user__avatar" src="img/user-avatar.jpg" width="40" height="40" alt="Avatar: Nathan">
                     <span class="user__name">Nathan</span>
                 </a>
 
@@ -58,7 +56,7 @@
 
                     <li class="navbar-menu__item navbar-menu__item--mobile--visible">
                         <a href="#" class="user navbar__user navbar__user--mobile--visible">
-                            <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+                            <img class="user__avatar" src="img/user-avatar.jpg" width="40" height="40" alt="Avatar: Nathan">
                             <span class="user__name user__name--light">Nathan</span>
                         </a>
                     </li>
@@ -167,11 +165,11 @@
                 <div class="hotel-grid">
                     <div class="swiper hotel-slider hotel__slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-1.jpg" alt="Slide"></div>
-                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-2.jpg" alt="Slide"></div>
-                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-3.jpg" alt="Slide"></div>
-                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-4.jpg" alt="Slide"></div>
-                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-5.jpg" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-1.webp" width="728" height="450" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image b-lazy" data-src="img/slide-2.webp" src="img/slide-2.webp" width="728" height="450" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image b-lazy" data-src="img/slide-3.webp" src="img/slide-3.webp" width="728" height="450" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image b-lazy" data-src="img/slide-4.webp" src="img/slide-4.webp" width="728" height="450" alt="Slide"></div>
+                            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image b-lazy" data-src="img/slide-5.webp" src="img/slide-5.webp" width="728" height="450" alt="Slide"></div>
                         </div>
                         <button class="hotel-slider__button hotel-slider__button--prev"></button>
                         <button class="hotel-slider__button hotel-slider__button--next"></button>
@@ -186,11 +184,11 @@
                                 </div>
                                 <div class="booking__room">
                                     <div class="booking__text">
-                                        <img src="img/user.svg" alt="Icon: user" class="booking__icon">
+                                        <img class="booking__icon" src="img/user.svg" width="14" height="14" alt="Icon: user">
                                         <span class="booking__description">2 x Guests</span>
                                     </div>
                                     <div class="booking__text">
-                                        <img src="img/home.svg" alt="Icon: home" class="booking__icon">
+                                        <img class="booking__icon" src="img/home.svg" width="14" height="14" alt="Icon: home">
                                         <span class="booking__description">1 x Room</span>
                                     </div>
                                 </div>
@@ -198,7 +196,7 @@
                             <div class="booking__call-center">
                                 <span class="booking__heading">Quick Booking</span>
                                 <a href="tel:12100" class="booking__number">
-                                    <img src="img/phone-call.svg" alt="Icon: phone">
+                                    <img class="booking__icon" src="img/phone-call.svg" width="14" height="14" alt="Icon: phone">
                                     <span class="booking__num">12100</span>
                                 </a>
                             </div>
@@ -244,7 +242,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-1.jpg" width="90" height="90" alt="Photo: Megan Fox">
                                     <h3 class="reviews-slider__username">Megan Fox</h3>
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                     <div class="reviews-slider__rating">
@@ -278,7 +276,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg" alt="Photo: Megan Fox">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg" width="90" height="90" alt="Photo: Megan Fox">
                                     <h3 class="reviews-slider__username">Merlin Monro</h3>
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                     <div class="reviews-slider__rating">
@@ -308,7 +306,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg" alt="Photo: Megan Fox">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg" width="90" height="90" alt="Photo: Megan Fox">
                                     <h3 class="reviews-slider__username">Djo Dassen</h3>
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                     <div class="reviews-slider__rating">
@@ -339,7 +337,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-4.jpg" alt="Photo: Megan Fox">
+                                    <img class="reviews-slider__avatar" src="img/reviews-avatar-4.jpg" width="90" height="90" alt="Photo: Megan Fox">
                                     <h3 class="reviews-slider__username">Richi More</h3>
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                     <div class="reviews-slider__rating">
@@ -378,28 +376,28 @@
                 <h2 class="activities__title">Other Activities</h2>
                 <div class="activities-wrapper">
                     <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
-                        <img src="img/card-activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
+                        <img class="card__image" src="img/card-activities-1.webp" width="255" height="255" alt="The curious corner of chamarel">
                         <h3 class="card__title">
                             The curious corner of chamarel
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
                     <div class="card activities__card" data-aos="flip-right" data-aos-delay="300">
-                        <img src="img/card-activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
+                        <img class="card__image" src="img/card-activities-2.webp" width="255" height="255" alt="Gymkhana club golf course">
                         <h3 class="card__title">
                             Gymkhana club golf course
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
                     <div class="card activities__card" data-aos="flip-left" data-aos-delay="300">
-                        <img src="img/card-activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+                        <img class="card__image" src="img/card-activities-3.webp" width="255" height="255" alt="Tamarind falls hiking trip - full day">
                         <h3 class="card__title">
                             Tamarind falls hiking trip - full day
                         </h3>
                         <button class="card__button">Book Now</button>
                     </div>
                     <div class="card activities__card" data-aos="fade-left" data-aos-delay="100">
-                        <img src="img/card-activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
+                        <img class="card__image" src="img/card-activities-4.webp" width="255" height="255" alt="The blue marine discovery quest">
                         <h3 class="card__title">
                             The blue marine discovery quest
                         </h3>
@@ -416,7 +414,7 @@
 
             <div class="footer-wrapper">
 
-                <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best tour plan" data-aos="flip-up">
+                <img class="logo footer__logo" src="img/vertical-logo.svg" width="166" height="192" alt="Logo: Best tour plan" data-aos="flip-up">
 
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">All categories</h3>
@@ -519,13 +517,13 @@
                     <ul class="footer__ul">
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/location.svg" alt="Icon: map marker">
+                                <img class="footer__icon" src="img/location.svg" width="14" height="20" alt="Icon: map marker">
                             </div>
                             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/footer-phone-call.svg" alt="Icon: phone call">
+                                <img class="footer__icon" src="img/footer-phone-call.svg" width="18" height="18" alt="Icon: phone call">
                             </div>
                             <span>Tel (business hours) : <a href="tel:2691500">269 1500</a><br>
                                 Tel (hotline) Monday - Saturday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
@@ -533,7 +531,7 @@
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/email.svg" alt="Icon: email">
+                                <img class="footer__icon" src="img/email.svg" width="17" height="14" alt="Icon: email">
                             </div>
                             <a href="mailto:cherly.lawson@example.com" target="_blank">cherly.lawson@example.com</a>
                         </li>
@@ -568,7 +566,7 @@
                 <p class="footer__bottom-text">
                     Disclaimer Conditions of use Cancellation policy
                 </p>
-                <img class="footer__bottom-icon" src="img/footer-icon.svg" alt="Icon: footer icon">
+                <img class="footer__bottom-icon" src="img/footer-icon.svg" width="136" height="22" alt="Icon: footer icon">
             </div>
 
         </div>
@@ -581,7 +579,7 @@
             <div class="modal__dialog">
 
                 <a href="#" class="modal__close">
-                    <img src="img/close.svg" alt="Icon: close">
+                    <img src="img/close.svg" width="16" height="16" alt="Icon: close">
                 </a>
                 <h3 class="modal__title modal__title--mb-3 modal__title--mb-5">Booking</h3>
 
@@ -607,6 +605,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/blazy.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

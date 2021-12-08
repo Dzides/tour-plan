@@ -20,34 +20,39 @@
         &__link
             color: $light
             text-transform: uppercase
+            font-family: 'Mulish-Bold'
+            font-weight: 700
             font-size: 14px
             line-height: 18px
-        @include desktop
-            &:hover 
-                color: $primary
-            &:focus
-                border: 1px solid $primary
-            &:active
-                color: $primary
+            transition: all 0.3s
+            @include desktop
+                &:hover 
+                    color: $primary
+                // &:focus
+                //     border: 1px solid $primary
+                &:active
+                    color: $primary
         &__item
             &--mobile
                 &--visible
                     display: none
 .logo 
     width: 177px
-    @include desktop
-        &:hover
-            box-shadow: 0 0 3px 1px rgba($primary, 0.5)
-    &:focus
-        border: 1px solid $primary
-    &:active
-        border: 1px solid $primary
+    // transition: all 0.3s
+    // @include desktop
+    //     &:hover
+    //         box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+    // &:focus
+    //     border: 1px solid $primary
+    // &:active
+    //     border: 1px solid $primary
 .search
     display: flex
     position: relative
     height: 40px
     overflow: hidden
     border-radius: 6px
+    transition: all 0.3s
     &__input
         width: 350px
         height: 100%
@@ -58,12 +63,13 @@
         font-size: 12px
         line-height: 15px
         color: $text-color
+        transition: all 0.3s
         @include desktop
             &:hover
                 color: rgba($text-color, 0.5)
     @include desktop
         &:hover
-            box-shadow: 0 0 3px 1px rgba($primary, 0.5)
+            // box-shadow: 0 0 3px 1px rgba($primary, 0.5)
             color: rgba($text-color, 0.5)
     &:focus
         border: 1px solid $primary
@@ -79,11 +85,12 @@
         background-color: $primary
         border: 1px solid $primary
         cursor: pointer
+        transition: all 0.3s
         @include desktop
             &:hover
                 opacity: 0.8
-        &:focus
-            border: 1px solid $secondary
+        // &:focus
+        //     border: 1px solid $secondary
         &:active
             border: 1px solid $secondary
     &__icon
@@ -99,11 +106,12 @@
         height: 40px
         border-radius: 50%
         object-fit: cover
+        transition: all 0.3s
         @include desktop
             &:hover
                 box-shadow: 0 0 3px 1px rgba($primary, 0.5)
-        &:focus
-            border: 1px solid $primary
+        // &:focus
+        //     border: 1px solid $primary
         &:active
             border: 1px solid $primary
     &__name
@@ -111,11 +119,12 @@
         font-size: 14px
         line-height: 18px
         color: $text-color
+        transition: all 0.3s
         @include desktop
             &:hover
                 color: $primary
-        &:focus
-            border: 1px solid $primary
+        // &:focus
+        //     border: 1px solid $primary
         &:active
             border: 1px solid $primary    
 

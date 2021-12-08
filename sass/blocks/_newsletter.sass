@@ -1,7 +1,7 @@
 .newsletter
     position: relative
     padding: 97px 0 88px
-    background-image: url(../img/newsletter-bg.jpg)
+    background-image: url(../img/newsletter-bg.webp)
     background-repeat: no-repeat
     background-position: center
     background-size: cover
@@ -25,7 +25,7 @@
     &-title
         color: $light
         font-size: 24px
-        font-style: normal
+        font-family: 'Mulish-Light', sans-serif
         font-weight: 300
         line-height: 30px
         &__strong
@@ -48,14 +48,15 @@
         border-radius: 4px
         padding-left: 33px
         padding-right: 75p
-        font-style: normal
+        font-family: 'Mulish-Light', sans-serif
         font-weight: 300
         font-size: 14px
         line-height: 18px
         overflow: hidden
+        transition: all 0.3s
         @include desktop
             &:hover
-                box-shadow: 0 0 3px 2px rgba($primary, 0.5)
+                // box-shadow: 0 0 3px 2px rgba($primary, 0.5)
                 color: rgba($text-color, 0.5)
         &:focus
             border: 1px solid $primary
@@ -72,6 +73,7 @@
         padding-right: 5px
         font-size: 12px
         font-style: normal
+        font-family: 'Mulish-Bold', sans-serif
         font-weight: 700
         line-height: 15px
         background-color: $primary
@@ -79,13 +81,14 @@
         border-radius: 0 4px 4px 0
         overflow: hidden
         text-overflow: ellipsis
+        transition: all 0.3s
         @include desktop
             &:hover
                 border: 1px solid $primary
                 color: $primary
                 background-color: $secondary
-        &:focus
-            border: 1px solid $secondary
+        // &:focus
+        //     border: 1px solid $secondary
         &:active
             border: 1px solid $primary
 
