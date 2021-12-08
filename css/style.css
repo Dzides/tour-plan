@@ -1773,6 +1773,26 @@ button {
   color: #E0E0E0;
 }
 
+.newsletter-wrapper__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.newsletter__button {
+  width: 50%;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -2141,6 +2161,9 @@ button {
   .newsletter-title {
     margin-bottom: 36px;
   }
+  .newsletter__button {
+    margin-top: 0;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -2299,6 +2322,8 @@ button {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    width: 94px;
+    height: 120px;
   }
   .footer__title {
     margin-top: -9px;
@@ -2308,7 +2333,6 @@ button {
   }
   .footer__title--inline {
     margin-left: 0;
-    margin-top: 0;
   }
   .footer__text {
     font-size: 14px;
@@ -2325,6 +2349,9 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__social-links {
+    margin-top: 5px;
   }
   .footer__additional {
     -ms-grid-row: 4;

@@ -83,7 +83,12 @@ $(document).ready(function () {
     $('.phone').mask('+7 (000) 000-00-00');
     $('.phone2').mask('+7 (000) 000-00-00');
 
-    AOS.init();
+    AOS.init({
+        disable: function () {
+            let maxWidth = 1000;
+            return window.innerWidth < maxWidth;
+        },
+    });
     var bLazy = new Blazy();
 
 });
