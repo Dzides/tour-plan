@@ -1917,7 +1917,7 @@ button {
     max-width: 180px;
   }
   .footer {
-    padding-top: 70px;
+    padding-top: 30px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
@@ -1983,6 +1983,7 @@ button {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+    width: 92%;
   }
   .footer__bottom {
     -ms-grid-columns: (1fr)[2];
@@ -2000,6 +2001,9 @@ button {
         align-self: center;
     -ms-grid-column-align: end;
         justify-self: end;
+  }
+  .footer__mtop {
+    margin-top: -42px;
   }
   .modal__inner {
     -ms-flex-wrap: wrap;
@@ -2196,9 +2200,18 @@ button {
   .card {
     width: 48%;
   }
+  .footer {
+    padding-top: 70px;
+  }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__contact-form {
+    width: 100%;
+  }
+  .footer__mtop {
+    margin-top: 0;
   }
   .modal__dialog {
     padding: 30px 25px;
