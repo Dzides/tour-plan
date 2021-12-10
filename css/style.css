@@ -450,6 +450,13 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea,
+a,
+button {
+  outline: 0;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -1470,13 +1477,14 @@ button {
 }
 
 .footer__logo {
-  width: 166px;
+  width: 155px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  margin-top: 8px;
 }
 
 .footer__categories {
