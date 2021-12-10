@@ -1943,6 +1943,7 @@ button {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
+    margin-top: 0;
   }
   .footer__title {
     margin-top: 6px;
