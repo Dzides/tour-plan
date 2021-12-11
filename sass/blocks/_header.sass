@@ -59,22 +59,25 @@
         padding-left: 23px
         padding-right: 75px
         background-color: #F5FAFE
-        border: none
         font-size: 12px
         line-height: 15px
         color: $text-color
         transition: all 0.3s
+        border: 1px solid transparent
+        border-radius: 6px
         @include desktop
             &:hover
                 color: rgba($text-color, 0.5)
+        &:focus
+            border: 1px solid $primary
+        &:active
+            border: 1px solid $primary
+
+
     @include desktop
         &:hover
             // box-shadow: 0 0 3px 1px rgba($primary, 0.5)
             color: rgba($text-color, 0.5)
-    &:focus
-        border: 1px solid $primary
-    &:active
-        border: 1px solid $primary
     &__button
         position: absolute
         top: 0
@@ -83,7 +86,7 @@
         height: 100%
         border: none
         background-color: $primary
-        border: 1px solid $primary
+        border: 1px solid transparent
         cursor: pointer
         transition: all 0.3s
         @include desktop

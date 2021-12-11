@@ -630,12 +630,13 @@ button {
   padding-left: 23px;
   padding-right: 75px;
   background-color: #F5FAFE;
-  border: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 6px;
 }
 
 @media (min-width: 992px) {
@@ -644,18 +645,18 @@ button {
   }
 }
 
+.search__input:focus {
+  border: 1px solid #EC1F46;
+}
+
+.search__input:active {
+  border: 1px solid #EC1F46;
+}
+
 @media (min-width: 992px) {
   .search:hover {
     color: rgba(51, 51, 51, 0.5);
   }
-}
-
-.search:focus {
-  border: 1px solid #EC1F46;
-}
-
-.search:active {
-  border: 1px solid #EC1F46;
 }
 
 .search__button {
@@ -666,7 +667,7 @@ button {
   height: 100%;
   border: none;
   background-color: #EC1F46;
-  border: 1px solid #EC1F46;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1171,6 +1172,14 @@ button {
   }
 }
 
+.subscribe__input:focus {
+  border: 1px solid #EC1F46;
+}
+
+.subscribe__input:active {
+  border: 1px solid #EC1F46;
+}
+
 .subscribe__button {
   position: absolute;
   min-width: 65px;
@@ -1614,6 +1623,16 @@ button {
   }
 }
 
+.footer__input:focus {
+  -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+          box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+}
+
+.footer__input:active {
+  -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+          box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+}
+
 .footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
@@ -1633,6 +1652,16 @@ button {
   .footer__message:hover {
     color: rgba(51, 51, 51, 0.5);
   }
+}
+
+.footer__message:focus {
+  -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+          box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+}
+
+.footer__message:active {
+  -webkit-box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
+          box-shadow: 0 0 3px 3px rgba(236, 31, 70, 0.5);
 }
 
 .footer__info {
