@@ -1474,7 +1474,7 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .footer__logo {
@@ -1691,6 +1691,10 @@ button {
       justify-self: center;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__bottom-link:not(:last-child) {
+  margin-right: 12px;
 }
 
 .footer__bottom-icon {
@@ -2443,6 +2447,9 @@ button {
   .footer__bottom-icon {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .footer__bottom-link:not(:last-child) {
+    margin-right: 5px;
   }
   .modal__input {
     font-size: 12px;
